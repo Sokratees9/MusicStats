@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fileTypes">
+        <item>mp3</item>
+        <item>wma</item>
+        <item>ogg</item>
+        <item>aac</item>
+    </string-array>
+
+</resources>

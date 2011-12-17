@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome" android:paddingBottom="10dp" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="10dp" android:layout_weight="0" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="@string/choice"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="12sp" android:paddingBottom="4dp" android:paddingLeft="4dp" android:paddingRight="4dp" android:paddingTop="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <Button
+            android:id="@+id/recalculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Re-calculate" android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/showStatsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Previous Stats" android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

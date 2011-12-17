@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ListPreferenceMultiSelect">
+        <attr name="entryImages" format="reference" />
+        <attr name="checkAll" format="string" />
+        <attr format="string" name="separator" />
+    </declare-styleable>
+
+</resources>

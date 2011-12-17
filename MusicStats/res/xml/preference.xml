@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="prefKey"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:okane="http://schemas.android.com/apk/res/org.okane.musicstats">
+
+    <PreferenceCategory
+        android:key="files_category"
+        android:title="Files" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="exclude_size"
+            android:summary="Exclude files less than a certain size"
+            android:title="Exclude on Size" />
+
+        <EditTextPreference
+            android:defaultValue="500"
+            android:dependency="exclude_size"
+            android:dialogMessage="Please enter the minimum file size on which to generate statistics"
+            android:dialogTitle="Select Min. Size (Kb)"
+            android:enabled="true"
+            android:key="exclude_size_value"
+            android:persistent="true"
+            android:summary="Select minimum file size for stats"
+            android:title="Minimum Size" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="exclude_length"
+            android:summary="Exclude files less than a certain length"
+            android:title="Exclude on Length" />
+
+        <EditTextPreference
+            android:defaultValue="20"
+            android:dependency="exclude_length"
+            android:dialogMessage="Please enter the minimum song length on which to generate statistics"
+            android:dialogTitle="Select Min. Length (Seconds)"
+            android:enabled="true"
+            android:key="exclude_length_value"
+            android:persistent="true"
+            android:summary="Select minimum song length for stats"
+            android:title="Minimum Lngth" />
+        
+        <org.okane.musicstats.ListPreferenceMultiSelect
+            android:defaultValue="#ALL#"
+            android:dialogTitle="File Types"
+            android:entries="@array/fileTypes"
+            android:entryValues="@array/fileTypes"
+            android:key="file_types"
+            android:summary="Select file type for stats to be generated"
+            android:title="File Types"
+			okane:checkAll="check"
+            okane:separator="|"  />
+        
+        
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Something Else" >
+    </PreferenceCategory>
+
+</PreferenceScreen>
